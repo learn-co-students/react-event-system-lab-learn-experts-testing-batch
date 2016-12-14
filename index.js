@@ -5,10 +5,8 @@ const Keypad = require('./components/Keypad');
 const EyesOnMe = require('./components/EyesOnMe');
 
 ReactDOM.render(
-  <div>
     <Keypad />
-    <EyesOnMe />
-  </div>,
+    <EyesOnMe />,
   document.getElementById('main')
 );
 
