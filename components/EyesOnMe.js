@@ -4,16 +4,21 @@ class EyesOnMe extends React.Component{
   constructor() {
     super();
 
-    this.enterPassword = this.enterPassword.bind(this)
+    this.focusEyes = this.focusEyes.bind(this)
+    this.lookAway = this.lookAway.bind(this)
   }
 
-  enterPassword(){
-    console.log('Entering password...')
+  focusEyes(){
+    console.log('Good!')
+  }
+
+  lookAway(){
+    console.log('Hey! Eyes on me!')
   }
 
   render(){
     return(
-      <input type='password' onKeyUp={this.enterPassword}></input>
+      <button onFocus={this.focusEyes} onBlur={this.lookAway}></button>
     )
   }
 }
